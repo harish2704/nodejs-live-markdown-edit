@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-live-markdown-edit",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "socket.io": "*",
+    "express": "3.1.0",
+    "ejs": "*"
+  }
+}
