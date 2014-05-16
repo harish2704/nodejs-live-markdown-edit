@@ -7,8 +7,10 @@ var socket = io.connect('http://localhost');
      */
 
     socket.on('change', function (data) {
-        html = window.markdown.toHTML( data );
-        $('#contentWrapper').html( html );
+        // html = window.markdown.toHTML( data );
+        marked( data, function(err, html){
+            $('#contentWrapper').html( html );
+        });
     });
 
 
